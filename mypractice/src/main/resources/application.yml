@@ -1,0 +1,16 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.44.128:3306/general_test?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: rootroot
+
+
+mybatis-plus:
+  type-aliases-package: com.icbc.itsp.generaltest.entity
+  mapper-locations: classpath:/mapper/*Mapper.xml
